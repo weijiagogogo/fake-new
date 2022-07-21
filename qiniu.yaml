@@ -1,0 +1,47 @@
+appId: 'io.yaklang.yakit'
+productName: 'Yakit'
+copyright: Copyright © 2021 v1ll4n
+
+directories:
+  buildResources: resources
+  output: release/
+  app: .
+ak=8MsLNjv_SPJelpgZek1qT7yOAIRFn_MBf2C0LTRI
+#artifactName: ${productName}-${version}-${platform}-${arch}.${ext}
+asar: true
+
+publish:
+  - provider: "generic"
+    url: https://yaklang.oss-cn-beijing.aliyuncs.com/yak/latest/
+
+mac:
+  artifactName: ${productName}-${version}-darwin-${arch}.${ext}
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: "app/assets/yakitlogo.icns"
+
+linux:
+  artifactName: ${productName}-${version}-linux-amd64.${ext}
+  target:
+    - target: AppImage
+      arch:
+        - x64
+
+win:
+  artifactName: ${productName}-${version}-windows-amd64.${ext}
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: "app/assets/yakitlogo.ico"
+
+#publish:
+#  - provider: generic
+#    url: https://update.electron-builder.com
+#    channel: latest
+releaseInfo:
+  releaseName: ${version}
+  releaseNotes: "view github release: https://github.com/yaklang/yakit/releases"

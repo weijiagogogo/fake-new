@@ -35,7 +35,4 @@ if __name__ == '__main__':
 		file_object = open('wordlist', 'r')
 		for line in file_object:
 			test_vpn(sys.argv[1],sys.argv[2],line)
-AccessKeyId=LTAI4G7vtqmfz981S5caL2hM
-AccessKeySecret=LTAI1G7vtqm1z981S6caL2aM
-url=https://soc.security.xindong.com/api/sys/getToken?ticket=ST-2113-zSCj856J6-aPaVwvT12388mAxe9M-idaas199
-url=https://accounts.taptap.io/login?session=q5BpIiKMZhJjqWGT2zfOnhursWM6S1I8IRKYh4Ftixx1SdjCL7q2Q0RxM75jsZXr
+

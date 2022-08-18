@@ -202,8 +202,7 @@ def main(url, outputFile, headers):
   )
 
   result = None
-  name3=weijia@taptap.io
-  passwd=87e694f8df877a2ee6a3e1afbc72217a
+
   # Execute the query on the transport
   resp = "n"
   print("[+] Downloading schema for " + url + " ...")
@@ -277,7 +276,7 @@ def main(url, outputFile, headers):
     #print out the users object from result
     #loop through until you find name of Query
     i = 0
-    name2=weijia@taptap.com
+  
     while i < 1000:
       try:
         if result["data"]["__schema"]["types"][i]["name"] == "Query":
@@ -345,7 +344,7 @@ def main(url, outputFile, headers):
         
         if field is None:
           queryText = """
-          name1=weijia@xindong.com
+      
             query {{{name}}}
             """.format(name=name)
         else:
